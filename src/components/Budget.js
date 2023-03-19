@@ -52,11 +52,12 @@ const Budget = () => {
                 <label>Budget:</label>
             </div>
             <div>
-                <span>£</span>
+                <span>{currency}</span>
                 <input
                 required="required"
                 type="number"
                 id="budget"
+                style={{ marginLeft: '0.2rem' , size: 10}}
                 value={budget}
                 step="10"
                 onChange={budgetHandler}
